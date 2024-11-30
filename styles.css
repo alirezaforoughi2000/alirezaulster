@@ -1,0 +1,104 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #121212;
+  color: white;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sidebar .login-btn {
+  margin-top: auto;
+  background-color: #ff0050;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar .login-btn:hover {
+  background-color: #e60045;
+}
+
+/* Video Container */
+.video-container {
+  flex-grow: 1;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  background-color: black;
+}
+
+.video-card {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-info {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  z-index: 10;
+}
+
+.video-description p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.video-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.video-actions div {
+  cursor: pointer;
+}
+
+.video-actions div:hover {
+  color: #ff0050;
+}
